@@ -2,9 +2,27 @@
   "name": "gitku",
   "version": "1.0.0",
   "description": "Git yang ramah pemula",
+  "keywords": [
+    "git",
+    "cli",
+    "pemula"
+  ],
+  "homepage": "https://github.com/Osanavv/gitku-cli#readme",
+  "bugs": {
+    "url": "https://github.com/Osanavv/gitku-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osanavv/gitku-cli.git"
+  },
+  "license": "MIT",
+  "author": "osanavv",
+  "type": "commonjs",
+  "main": "bin/gitku.js",
   "bin": {
     "gitku": "bin/gitku.js"
   },
-  "keywords": ["git", "cli", "pemula"],
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
