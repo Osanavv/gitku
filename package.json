@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Git yang ramah pemula",
   "bin": {
-    "gitku": "./bin/gitku.js"
+    "gitku": "bin/gitku.js"
   },
   "keywords": ["git", "cli", "pemula"],
   "license": "MIT"
