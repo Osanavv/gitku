@@ -23,7 +23,7 @@ npm install -g @ossnv/gitku
 Atau clone manual:
 
 ```bash
-git clone https://github.com/Osanavv/gitku-cli.git
+git clone https://github.com/Osanavv/gitku.git
 cd gitku
 npm link
 ```
