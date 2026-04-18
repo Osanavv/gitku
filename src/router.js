@@ -4,6 +4,7 @@ const { beda, info, siapa } = require('./commands/diff');
 const { versi, rilis } = require('./commands/tag');
 const { abaikan } = require('./commands/ignore');
 const { peta, pohon } = require('./commands/visual');
+const { statusCerdas } = require('./commands/status');
 const help = require('./help');
 
 const commands = {
@@ -21,7 +22,12 @@ const commands = {
 };
 
 async function main(args) {
-  if (args.length === 0 || args[0] === 'help') {
+  if (args.length === 0) {
+    await statusCerdas();
+    return;
+  }
+
+  if (args[0] === 'help') {
     help();
     return;
   }
@@ -46,7 +52,7 @@ function handleError(err) {
   const msg = err.stderr || err.message || String(err);
 
   const errors = [
-    { match: /not a git repository/i,        pesan: 'Folder ini belum pakai git.\n   Coba: gitku mulai' },
+    { match: /not a git repository/i,         pesan: 'Folder ini belum pakai git.\n   Coba: gitku mulai' },
     { match: /nothing to commit/i,            pesan: 'Tidak ada perubahan. Semua sudah up to date!' },
     { match: /nothing added to commit/i,      pesan: 'Belum ada file yang ditandai.\n   Coba: gitku tandai semua' },
     { match: /unrelated histories/i,          pesan: 'Repo punya riwayat berbeda.\n   Coba: gitku tarik --izinkan-beda' },
