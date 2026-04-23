@@ -1,6 +1,6 @@
 # 🚀 gitku
 
->Kenapa harus ribet kalau bisa simpel? gitku nge-refactor command Git yang keras dan bikin stress jadi bahasa yang mudah pahami dan sat-set-sat-set super duper ultra max gokil.
+>Kenapa harus ribet kalau bisa simpel? gitku nge-refactor command Git yang sulit dan bikin stress jadi bahasa yang mudah pahami dan sat-set-sat-set super duper ultra max gokil.
 
 ```bash
 # Daripada nulis ini 😵
